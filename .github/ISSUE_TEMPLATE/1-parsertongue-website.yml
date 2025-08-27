@@ -1,9 +1,10 @@
-name: Parsertongue.org problem
+name: https://parsertongue.org problem
 description: File an issue about parsertongue.org content.
-title: "[parsertongue.org]: "
-labels: ["bug", "parsertongue"]
+title: "[parsertongue-website] "
+labels: ["bug", "parsertongue-website"]
 assignees:
   - myedibleenso
+projects: ["myedibleenso/2"]
 body:
   - type: markdown
     attributes:
@@ -14,17 +15,8 @@ body:
     attributes:
       label: What went wrong?
       description: Please describe the problem you encountered.
-      placeholder: Tell us what you see!
-      value: "Never should have come here!⚔️"
-    validations:
-      required: true
-  - type: textarea
-    id: the-problem
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      placeholder: "Never should have come here!⚔️"
+      #value: "Never should have come here!⚔️"
     validations:
       required: true
   - type: input
@@ -32,9 +24,9 @@ body:
     attributes:
       label: URL
       description: What is the URL of the page with the problem?
-      placeholder: ex. email@example.com
+      placeholder: https://parsertongue.org/courses
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: browsers
     attributes:

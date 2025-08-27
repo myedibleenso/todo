@@ -1,0 +1,57 @@
+name: Parsertongue.org problem
+description: File an issue about parsertongue.org content.
+title: "[parsertongue.org]: "
+labels: ["bug", "parsertongue"]
+assignees:
+  - myedibleenso
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue with parsertongue.org!
+  - type: textarea
+    id: the-problem
+    attributes:
+      label: What went wrong?
+      description: Please describe the problem you encountered.
+      placeholder: Tell us what you see!
+      value: "Never should have come here!⚔️"
+    validations:
+      required: true
+  - type: textarea
+    id: the-problem
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: What is the URL of the page with the problem?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: dropdown
+    id: problemtype
+    attributes:
+      label: What type of problem is this?
+      multiple: false
+      options:
+        - Broken link
+        - Outdated content
+        - Typo
+        - Other
